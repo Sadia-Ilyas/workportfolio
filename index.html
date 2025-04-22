@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-VkjwNleQ5Qu9WfaXTGxAqzmLZ8t21uh4hLaPsTkj/9DffjVx4fsgyZOdjqXKydB4"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav" id="nav">
+      <div class="navlogo">
+        <h1>SADIA</h1>
+      </div>
+
+      <div class="navmanu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./certificates.html">Certificates</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- navbar -->
+    <!-- homepage -->
+    <div class="homepage" id="home">
+      <div class="intro">
+        <h3>Hi There!</h3>
+        <h2>I Am A Web Developer</h2>
+        <p>
+          Aspiring Web Developer actively seeking an internship opportunity to
+          apply and enhance my skills in front-end and back-end development.
+        </p>
+        <button>
+          About Me <span><i class="fa-solid fa-user"></i></span>
+        </button>
+      </div>
+      <div class="img">
+        <img src="./imgs/sadia.jpg" alt="pic" />
+      </div>
+    </div>
+    <!-- homepage -->
+    <!-- persona -->
+    <div class="persona" id="about">
+      <div class="img">
+        <img src="./imgs/sadia.jpg" alt="pic" />
+      </div>
+      <div class="details">
+        <h2>My Name Is Sadia</h2>
+        <p>
+          Hi, I'm Sadia, a passionate web developer with a strong interest in
+          building dynamic and user-friendly websites. I specialize in PHP,
+          AJAX, and front-end technologies like HTML, CSS, Bootstrap and
+          JavaScript.
+        </p>
+        <span><b>Age:</b> 23</span><br />
+        <span><b>Gender:</b> Female</span><br />
+        <span><b>Work:</b> Web Developer</span><br />
+
+        <a href="cv/cv.pdf" download>
+          <button>
+            Download CV <span><i class="fa-solid fa-download"></i></span>
+          </button>
+        </a>
+        <div class="container">
+          <div class="box">
+            <h3>1+</h3>
+
+            <h2>Experience</h2>
+          </div>
+          <div class="box">
+            <h3>1</h3>
+
+            <h2>College Project</h2>
+          </div>
+          <div class="box">
+            <h3>0</h3>
+
+            <h2>Clients</h2>
+          </div>
+          <div class="box">
+            <h3>0</h3>
+
+            <h2>Awards</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- persona -->
+
+    <!-- myskills -->
+    <div class="myskills">
+      <h2>My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <!-- Left Skills Column -->
+        <div class="skills-column">
+          <div class="box">
+            <h3>HTML5</h3>
+            <h4>95%</h4>
+            <div class="progress-bar"><span style="width: 95%"></span></div>
+          </div>
+          <div class="box">
+            <h3>CSS3</h3>
+            <h4>95%</h4>
+            <div class="progress-bar"><span style="width: 95%"></span></div>
+          </div>
+          <div class="box">
+            <h3>Bootstrap</h3>
+            <h4>90%</h4>
+            <div class="progress-bar"><span style="width: 90%"></span></div>
+          </div>
+        </div>
+
+        <!-- Right Skills Column -->
+        <div class="skills-column">
+          <div class="box">
+            <h3>PHP</h3>
+            <h4>80%</h4>
+            <div class="progress-bar"><span style="width: 80%"></span></div>
+          </div>
+          <div class="box">
+            <h3>Ajax</h3>
+            <h4>70%</h4>
+            <div class="progress-bar"><span style="width: 70%"></span></div>
+          </div>
+          <div class="box">
+            <h3>Database Mysql</h3>
+            <h4>70%</h4>
+            <div class="progress-bar"><span style="width: 70%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- myskills -->
+
+    <script>
+      // Select the navbar
+      const navbar = document.getElementById("nav");
+
+      // Add an event listener for the scroll event
+      window.onscroll = function () {
+        // Check if the page has been scrolled down
+        if (window.scrollY > 50) {
+          // Add the 'transparent' class to the navbar
+          navbar.classList.add("transparent");
+        } else {
+          // Remove the 'transparent' class when scrolled back up
+          navbar.classList.remove("transparent");
+        }
+      };
+    </script>
+  </body>
+</html>

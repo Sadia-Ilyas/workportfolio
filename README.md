@@ -1,1 +1,2 @@
 # workportfolio
+# All projects template
